@@ -1,0 +1,39 @@
+.wrapper{
+    width: 600px;
+	height: 600px;
+    position: absolute;
+    left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+	opacity: 0;
+	animation: show 2s linear forwards;
+    svg .p1-needMoveS, svg .p1-needMoveF  {
+			stroke: #000;
+			stroke-width: 4px;
+			stroke-dasharray: 1500 10000;
+            stroke-dashoffset: 1500;
+	}
+    svg .p1-needMoveS {
+		animation: show 3.5s linear forwards;
+	}
+	svg .p1-needMoveF {
+		animation: show 1.2s linear forwards;
+	}
+	svg #openEmail{
+		opacity: 0;
+		animation: show .7s linear forwards;
+	}
+    @keyframes show {
+        to {
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes show {
+        to {
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+    }    
+}
