@@ -1,17 +1,18 @@
 .wrapper2{
-    width: 100%;
-	height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
 	background-color: #D1C5AC;
 
     .bgi-rose{
+        position: relative;
         width: 350px;
 		height: 600px;
         padding-left: 250px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		margin-left: -300px;
-		margin-top: -300px;
+        margin: 0 auto;
 		background-size: 100% 100%;
 		background-image: url(../img/rose.jpg);
 		opacity: 0.2;
@@ -19,7 +20,7 @@
 
         .autograph{
             position: absolute;
-            right: 0;
+            right: -150px;
             top: 350px;
             opacity: 0.7;    
         } 
@@ -45,5 +46,30 @@
             stroke-dashoffset: 0;
             opacity: 1;
         }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .wrapper2{
+        .bgi-rose{
+            margin-top: 80px;
+            width: 170px;
+            height: 350px;
+            padding-left: 150px;
+            .autograph{
+                position: absolute;
+                right: -120px;
+                top: 280px;
+                opacity: 0.7;   
+                svg{
+                    width: 400px;
+                    height: 224px;
+                } 
+            } 
+            .content{
+                font-size: 15px;
+                margin-top: 30px;
+            }
+        }  
     }
 }

@@ -20,13 +20,12 @@ var EntryPage = React.createClass({
             row.push(<Page2 key={2}/>)
         }
         return (
-            <div className="page1">
+            <div className="page">
                 {row}
             </div>
         )
     }
 })
-
 ReactDom.render (
 	<EntryPage/>,
 	document.getElementById('root')

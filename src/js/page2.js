@@ -110,17 +110,12 @@ var Page2 = React.createClass({
                         </svg>
                     </div>
                     <div className="content">
-                        git branch 查看主干
-                        git checkout -b dev  建立并切换dev分支
-                        然后 开始简单的弹窗测试：
-                            写配置文件，入口文件等
-                            webpack-dev-server
-                            在http://localhost:8080/static/index.html打开文件
-                        开始写js文件。
-                        touch .gitignore
-                        git 当前版本推入本地仓库
-                        在主干上合并分支 git merge dev
-                        推到远程分支git push origin master
+                       莫名的我就喜欢你，深深的爱上了你。。。
+                       抱歉啊。我一直不好意思问你是不是单身，但是我是真的喜欢你。
+                       我想牵你的手，给你一个拥抱。
+                       我想和你一起打王者荣耀，我其实已经到黄金段位了，怕太坑一直都没找你打排位。
+                       还有就是你笑起来真的好看。哈哈哈哈哈
+                       你可以给我一个机会，也许我不懂浪漫，也许我不解风情，又或许我太软弱，才会用这样的方式表达。
                     </div>
                 </div>
             </div>

@@ -84,12 +84,11 @@
 	        }
 	        return _react2.default.createElement(
 	            'div',
-	            { className: 'page1' },
+	            { className: 'page' },
 	            row
 	        );
 	    }
 	});
-
 	_reactDom2.default.render(_react2.default.createElement(EntryPage, null), document.getElementById('root'));
 
 /***/ },
@@ -22304,7 +22303,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'content' },
-	                    'git branch \u67E5\u770B\u4E3B\u5E72 git checkout -b dev  \u5EFA\u7ACB\u5E76\u5207\u6362dev\u5206\u652F \u7136\u540E \u5F00\u59CB\u7B80\u5355\u7684\u5F39\u7A97\u6D4B\u8BD5\uFF1A \u5199\u914D\u7F6E\u6587\u4EF6\uFF0C\u5165\u53E3\u6587\u4EF6\u7B49 webpack-dev-server \u5728http://localhost:8080/static/index.html\u6253\u5F00\u6587\u4EF6 \u5F00\u59CB\u5199js\u6587\u4EF6\u3002 touch .gitignore git \u5F53\u524D\u7248\u672C\u63A8\u5165\u672C\u5730\u4ED3\u5E93 \u5728\u4E3B\u5E72\u4E0A\u5408\u5E76\u5206\u652F git merge dev \u63A8\u5230\u8FDC\u7A0B\u5206\u652Fgit push origin master'
+	                    '\u83AB\u540D\u7684\u6211\u5C31\u559C\u6B22\u4F60\uFF0C\u6DF1\u6DF1\u7684\u7231\u4E0A\u4E86\u4F60\u3002\u3002\u3002 \u62B1\u6B49\u554A\u3002\u6211\u4E00\u76F4\u4E0D\u597D\u610F\u601D\u95EE\u4F60\u662F\u4E0D\u662F\u5355\u8EAB\uFF0C\u4F46\u662F\u6211\u662F\u771F\u7684\u559C\u6B22\u4F60\u3002 \u6211\u60F3\u7275\u4F60\u7684\u624B\uFF0C\u7ED9\u4F60\u4E00\u4E2A\u62E5\u62B1\u3002 \u6211\u60F3\u548C\u4F60\u4E00\u8D77\u6253\u738B\u8005\u8363\u8000\uFF0C\u6211\u5176\u5B9E\u5DF2\u7ECF\u5230\u9EC4\u91D1\u6BB5\u4F4D\u4E86\uFF0C\u6015\u592A\u5751\u4E00\u76F4\u90FD\u6CA1\u627E\u4F60\u6253\u6392\u4F4D\u3002 \u8FD8\u6709\u5C31\u662F\u4F60\u7B11\u8D77\u6765\u771F\u7684\u597D\u770B\u3002\u54C8\u54C8\u54C8\u54C8\u54C8 \u4F60\u53EF\u4EE5\u7ED9\u6211\u4E00\u4E2A\u673A\u4F1A\uFF0C\u4E5F\u8BB8\u6211\u4E0D\u61C2\u6D6A\u6F2B\uFF0C\u4E5F\u8BB8\u6211\u4E0D\u89E3\u98CE\u60C5\uFF0C\u53C8\u6216\u8BB8\u6211\u592A\u8F6F\u5F31\uFF0C\u624D\u4F1A\u7528\u8FD9\u6837\u7684\u65B9\u5F0F\u8868\u8FBE\u3002'
 	                )
 	            )
 	        );
@@ -22348,7 +22347,7 @@
 
 
 	// module
-	exports.push([module.id, ".wrapper2 {\n  width: 100%;\n  height: 800px;\n  background-color: #D1C5AC;\n}\n.wrapper2 .bgi-rose {\n  width: 350px;\n  height: 600px;\n  padding-left: 250px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -300px;\n  margin-top: -300px;\n  background-size: 100% 100%;\n  background-image: url(" + __webpack_require__(191) + ");\n  opacity: 0.2;\n  animation: show 2s linear forwards;\n}\n.wrapper2 .bgi-rose .autograph {\n  position: absolute;\n  right: 0;\n  top: 350px;\n  opacity: 0.7;\n}\n.wrapper2 .bgi-rose .content {\n  font-size: 20px;\n  margin-top: 60px;\n  text-indent: 2em;\n  line-height: 1.5em;\n  font-family: \"Microsoft YaHei\", SimSun, '\\5B8B\\4F53', sans-serif;\n}\n@keyframes show {\n  to {\n    stroke-dashoffset: 0;\n    opacity: 1;\n  }\n}\n@-webkit-keyframes show {\n  to {\n    stroke-dashoffset: 0;\n    opacity: 1;\n  }\n}\n", ""]);
+	exports.push([module.id, ".wrapper2 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  overflow: hidden;\n  background-color: #D1C5AC;\n}\n.wrapper2 .bgi-rose {\n  position: relative;\n  width: 350px;\n  height: 600px;\n  padding-left: 250px;\n  margin: 0 auto;\n  background-size: 100% 100%;\n  background-image: url(" + __webpack_require__(191) + ");\n  opacity: 0.2;\n  animation: show 2s linear forwards;\n}\n.wrapper2 .bgi-rose .autograph {\n  position: absolute;\n  right: -150px;\n  top: 350px;\n  opacity: 0.7;\n}\n.wrapper2 .bgi-rose .content {\n  font-size: 20px;\n  margin-top: 60px;\n  text-indent: 2em;\n  line-height: 1.5em;\n  font-family: \"Microsoft YaHei\", SimSun, '\\5B8B\\4F53', sans-serif;\n}\n@keyframes show {\n  to {\n    stroke-dashoffset: 0;\n    opacity: 1;\n  }\n}\n@-webkit-keyframes show {\n  to {\n    stroke-dashoffset: 0;\n    opacity: 1;\n  }\n}\n@media screen and (max-width: 500px) {\n  .wrapper2 .bgi-rose {\n    margin-top: 80px;\n    width: 170px;\n    height: 350px;\n    padding-left: 150px;\n  }\n  .wrapper2 .bgi-rose .autograph {\n    position: absolute;\n    right: -120px;\n    top: 280px;\n    opacity: 0.7;\n  }\n  .wrapper2 .bgi-rose .autograph svg {\n    width: 400px;\n    height: 224px;\n  }\n  .wrapper2 .bgi-rose .content {\n    font-size: 15px;\n    margin-top: 30px;\n  }\n}\n", ""]);
 
 	// exports
 
