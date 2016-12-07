@@ -1,3 +1,6 @@
+var webpack = require('webpack'); 
+var uglifyPlugin = new webpack.optimize.UglifyJsPlugin({minimize: true});
+
 module.exports = {
     entry: {
         index: './src/js/index.js'
@@ -25,7 +28,8 @@ module.exports = {
             test: /\.(png|jpg)$/, 
             loader: 'url-loader?limit=8192&name=./[name].[ext]'
         }]
-    }        
+    },
+    plugins: [uglifyPlugin]        
 }
 
 // npm  install preset-react / preset-es2015   react-dom 

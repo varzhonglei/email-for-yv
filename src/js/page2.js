@@ -12,6 +12,7 @@ var Page2 = React.createClass({
             pathList[i].style.strokeLinecap = "round";
             var curLen = Math.round(pathList[i].getTotalLength());
             pathList[i].style.strokeDasharray = curLen + " " + (curLen + 20);
+            //上面设置了strokeWidth较宽，所以两头会预留一些像素
             pathList[i].style.strokeDashoffset = curLen + 10;
             pathList[i].style.transition = 'show ' + curLen + 'ms linear ' + delay + 'ms forwards';
             pathList[i].style.webkitAnimation = 'show ' + curLen + 'ms linear ' + delay + 'ms forwards';
