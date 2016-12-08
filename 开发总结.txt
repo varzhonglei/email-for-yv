@@ -1,0 +1,29 @@
+1 svg动画： 当传入的矢量图过于粗，只能把图形信息展示出来，并不能通过动画展示。（先开始在ai中，我先用画笔画的，切换成钢笔后就能通过动画展示文字了）
+
+2 关于动画的实现方式：
+stroke-dasharray: 1500 10000;
+stroke-dashoffset: 1500;
+svg动画实现一般通过设置上面两个属性设置，然后运动到stroke-dashoffset: 0;如下
+    animation: show（运动名称） 3.5s（运动时间） linear（运动方式（渐快|渐慢|等等）） forwards（运动后图形停在当前画面）;
+    @keyframes show {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+这里有需要说明一下： 当通过设置pathList[i].style.strokeWidth = "3px";  这里设置画1500。 向后位移1500。但是你增加的线的宽度。可能会露出线头。
+于是我们考虑多设置一点预留空间。stroke-dasharray: 1500 10000; stroke-dashoffset: 1520;
+
+3 关于移动端的布局：
+响应式布局： 主要通过 媒体查询 来实现   @media screen and (max-width: 500px) 
+                                    @media only screen and (-webkit-min-device-pixel-ratio: 2)设备像素密度 百度ipad版有用到
+
+同过设置页面初始宽度 来专程为移动端做页面 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+关于在不同移动设备上使指定内容大小 按屏幕大小自适应（宽高比不变）
+    通过把内容元素按百分比设定宽度
+        关于子元素的高的百分比设定；（如果你想让一个子元素的宽高比不是根据设备宽高比而定，那么高的比例参照物就必须和宽的参照物相同）
+            子元素的 padding-bottom 或者 padding-top 充当内容区， 这里的两个值是根据父元素的宽而定的。
+
+
+
+
